@@ -1,0 +1,11 @@
+{
+  "id": "midnight-violet",
+  "name": "Midnight Violet",
+  "author": "Shell Bay",
+  "base": "dark",
+  "colors": {
+    "bg": "#120a1f",
+    "accent": "#a855f7",
+    "on-accent": "#ffffff"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "terraform-suggest",
+  "name": "Terraform Suggestions",
+  "version": "1.0.0",
+  "author": "Shell Bay",
+  "capabilities": ["suggest.commands"],
+  "code": "const TERRAFORM = [\n  { flag: 'init', desc: 'Initialize a working directory' },\n  { flag: 'plan', desc: 'Show changes required by the current config' },\n  { flag: 'apply', desc: 'Create or update infrastructure' },\n  { flag: 'destroy', desc: 'Destroy previously-created infrastructure' },\n  { flag: 'validate', desc: 'Check whether the config is valid' },\n  { flag: 'fmt', desc: 'Reformat config files to the canonical style' },\n  { flag: 'output', desc: 'Show output values' },\n  { flag: 'state', desc: 'Advanced state management' },\n  { flag: 'workspace', desc: 'Manage workspaces' },\n  { flag: 'show', desc: 'Show the current state or a saved plan' },\n  { flag: '-auto-approve', desc: 'Skip interactive approval' },\n  { flag: '-var', desc: 'Set a variable (key=value)' },\n  { flag: '-var-file', desc: 'Load variables from a file' },\n  { flag: '-target', desc: 'Limit the operation to a specific resource' },\n  { flag: '-chdir', desc: 'Switch working directory before running' },\n  { flag: '-upgrade', desc: 'Upgrade provider/module versions during init' },\n];\n\n// shellbay.registerSuggestSource receives { command, partial } for whatever\n// the user is currently typing and must return an array of { flag, desc }.\n// Returning [] for commands this plugin doesn't know about is required —\n// Shell Bay merges results from every enabled plugin, so only answer for your\n// own command(s).\nshellbay.registerSuggestSource(async (ctx) => (ctx.command === 'terraform' ? TERRAFORM : []));\n"
+}

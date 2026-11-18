@@ -1,0 +1,31 @@
+build/bin
+frontend/node_modules
+frontend/dist/*
+!frontend/dist/.gitkeep
+frontend/wailsjs
+frontend/package.json.md5
+.DS_Store
+
+# Local planning and coding-assistant instructions.
+/PLAN.md
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+/.claude/
+/.codex/
+/.agents/
+/.cursor/
+/.cursorrules
+/.mcp.json
+/.github/copilot-instructions.md
+
+# Local environment and Shell Bay user data.
+.env
+.env.*
+!.env.example
+vault.hrb
+vault.hrb.bak
+transfers.json
+transfers.json.tmp
+*.shellbay
+*.harbor

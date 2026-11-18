@@ -1,0 +1,14 @@
+{
+  "id": "kubectl-dictionary",
+  "name": "kubectl command dictionary",
+  "version": "1.0.0",
+  "capabilities": ["suggest.commands"],
+  "commands": {
+    "kubectl": [
+      { "flag": "get", "desc": "List resources" },
+      { "flag": "describe", "desc": "Show details for a resource" },
+      { "flag": "--namespace", "desc": "Select a namespace" },
+      { "flag": "--context", "desc": "Select a kubeconfig context" }
+    ]
+  }
+}
