@@ -2,6 +2,8 @@
 
 Shell Bay is a desktop SSH client with a two-pane file manager and direct sharing between teammates. It stores connections and credentials in an encrypted vault on your computer.
 
+[![Shell Bay host vault with grouped servers, favorites, and a selected connection](docs/screenshots/hosts.png)](docs/screenshots/hosts.png)
+
 ## Download and run
 
 | Your computer | Download | After downloading |
@@ -23,6 +25,14 @@ Shell Bay is a desktop SSH client with a two-pane file manager and direct sharin
   ```
 
   Extract the archive with your file manager and open the `ShellBay` file. From the extracted folder in a terminal, you can run `./ShellBay`.
+
+## Screenshots
+
+Screenshots were captured in Shell Bay using a demo project and a local test server. Select an image to view it at full size.
+
+| SSH terminal | Two-pane SFTP file manager |
+| --- | --- |
+| [![SSH terminal showing Git status, project files, and service logs](docs/screenshots/terminal.png)](docs/screenshots/terminal.png) | [![Local and remote project folders with a completed SFTP transfer](docs/screenshots/file-manager.png)](docs/screenshots/file-manager.png) |
 
 ## What you can do
 
